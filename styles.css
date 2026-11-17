@@ -1,0 +1,125 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary : #2563EB ;
+    --secondary : #1E293B;
+    --background :#0F172A;
+    --text-color: #E2E8F0;
+    --hover :#1D4ED8;
+}
+body{
+    background-color: var(--background);
+    color:var(--text-color);
+}
+.pageTitle{
+    color:var(--text-color);
+    text-align: center;
+    margin-top: 5vh;
+}
+.buttons{
+    background-color:var(--primary);
+    color: var(--text-color);
+    border : 2px solid var(--secondary);
+    border-radius: 50%;
+    padding: 50px;
+    font-size: 50px;
+    margin-right: 20px;
+}
+.buttons:hover{
+    background-color:var(--hover);
+    color: var(--text-color);
+    border : 3px solid var(--primary);
+    border-radius: 50%;
+    padding: 50px;
+    font-size: 50px;
+    margin-right: 20px;
+}
+.buttonSection{
+    background-color: var(--secondary);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 10vh;
+    margin: 30px;
+    padding: 20%;
+    border-radius: 10px;
+}
+.wordUnderTheButton{
+    color:var(--text-color);
+    margin-left: -15px;
+    font-size: large;
+    font-weight: bold;
+}
+#scoreSection{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.won,.lost{
+    background-color: var(--secondary);
+    height: 30vh;
+    width: 30vw;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 30px;
+    padding-top: 20px;
+    font-size: 40px;
+}
+.won{
+    margin-left: 5vw;
+    color: rgb(54, 255, 47);
+}
+.lost{
+    color:red;
+}
+#wonScore,#lostScore{
+    margin-top: 40px;
+}
+#resultSection{
+    background-color: var(--secondary);
+    min-height: 10vh;
+    margin : 30px;
+    border-radius: 10px;
+    align-items: center;
+    display: none;
+}
+#result{
+    margin-left: 10px;
+    padding: 12px;
+    font-size: 20px;
+    white-space: pre-line;
+}
+.resetButtonSection{
+    margin-top: 8vh;
+    text-align: center;
+}
+#resetButton{
+    background-color: var(--primary);
+    color:var(--text-color);
+    padding: 20px 30px;
+    border:2px solid var(--background);
+    border-radius: 10px;
+    font-weight: bolder;
+}
+#resetButton:hover{
+    background-color: var(--hover);
+    color:var(--text-color);
+    padding: 20px 30px;
+    border:3px solid var(--primary);
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.winner{
+    color : #22C55E;
+}
+.loser{
+    color : red;
+}
+.tie{
+    color : #FACC15;
+}
